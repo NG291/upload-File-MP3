@@ -10,6 +10,8 @@
         Back to song list
     </a>
 </p>
+<p th:object="${message}">
+</p>
 <div id="form">
     <form th:action="@{/songs/create}" th:object="${songForm}"
           method="POST" novalidate="novalidate" enctype="multipart/form-data">
